@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="etch-a-sketch.css" />
+    <script src="etch-a-sketch.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Etch-a-Sketch</div>
+    </div>
+
+    <div class="content">
+      <div class="tools">
+        <div class="backgroundColour">
+          Background
+          <input
+            type="color"
+            id="background-colour"
+            name="color-picker"
+            value="#FFFFFF"
+          />
+        </div>
+        <div class="penColour">
+          Pen <input type="color" id="pen-colour" name="color-picker" />
+        </div>
+
+        <div class="top">
+          <label for="button1">
+            <input
+              type="radio"
+              id="button1"
+              name="button-group"
+              value="pen"
+              checked
+            />
+            <div class="button-image image1"></div>
+          </label>
+          <label for="button2">
+            <input
+              type="radio"
+              id="button2"
+              name="button-group"
+              value="eraser"
+            />
+            <div class="button-image image2"></div>
+          </label>
+        </div>
+        <div class="bottom">
+          <label for="button3">
+            <input
+              type="radio"
+              id="button3"
+              name="button-group"
+              value="rainbow"
+            />
+            <div class="button-image image3"></div>
+          </label>
+        </div>
+
+        <div class="bottomClear">
+          <button class="clearButton">clear</button>
+        </div>
+      </div>
+      <div class="drawingSheet"></div>
+    </div>
+    <div class="container2">
+      <div class="windowSize">
+        +
+        <input
+          type="range"
+          min="10"
+          max="40"
+          value="20"
+          class="slider"
+          id="myRange"
+        />
+        -
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://www.flaticon.com/free-icons/pen" title="pen icons"
+        >Pen icons created by Icongeek26 - Flaticon</a
+      >
+      <a href="https://www.flaticon.com/free-icons/eraser" title="eraser icons"
+        >Eraser icons created by Creatype - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.com/free-icons/rainbow"
+        title="rainbow icons"
+        >Rainbow icons created by Freepik - Flaticon</a
+      >
+    </footer>
+  </body>
+</html>

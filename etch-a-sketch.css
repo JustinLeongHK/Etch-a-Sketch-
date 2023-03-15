@@ -1,0 +1,212 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.title {
+  font-family: monaco, "lucida console", monospace;
+  font-size: 50px;
+  font-weight: bold;
+  color: #2f3c7e;
+  padding: 10px;
+  border: 5px;
+  border-radius: 20px;
+  width: 400px;
+  background-color: aliceblue;
+}
+
+body {
+  background-color: #fbeaeb;
+}
+
+.tools,
+.drawingSheet {
+  border: 5px solid black;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tools {
+  width: 250px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.drawingSheet {
+  width: 500px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.pen,
+.rainbowMode,
+.eraser,
+.shading {
+  border: 3px solid black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.penColour,
+.backgroundColour {
+  border: 3px solid black;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  width: 200px;
+  height: auto;
+  background-color: #2f3c7e;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.bottomClear {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.windowSize {
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 780px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 50px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  height: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0px 10px;
+}
+
+.button-image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+.image1 {
+  background-image: url("icons/pen.png");
+  width: 50px;
+  height: 50px;
+}
+
+.image2 {
+  background-image: url("icons/eraser.png");
+  width: 50px;
+  height: 50px;
+}
+
+.image3 {
+  background-image: url("icons/rainbow.png");
+  width: 50px;
+  height: 50px;
+}
+
+/* Show selected button */
+input[type="radio"]:checked + .button-image {
+  background-color: aliceblue;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2f3c7e;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2f3c7e;
+  cursor: pointer;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 :hover {
+  color: red;
+  text-decoration: underline;
+}
+
+input[type="color"] {
+  height: 35px;
+  width: 60px;
+  padding: 0;
+  margin-left: 30px;
+  border: none;
+}
+
+#pen-colour {
+  margin-left: 85px;
+}
